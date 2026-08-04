@@ -1,0 +1,13 @@
+title = "koveo"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Fixtures et exemples volontairement porteurs de motifs ressemblant à des secrets"
+paths = [
+  '''\.env\.example$''',
+  '''(^|/)example\.tfvars$''',
+  '''(^|/)fixtures/''',
+  '''(^|/)docs/.*\.md$''',
+]

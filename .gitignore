@@ -1,0 +1,48 @@
+# --- OS / editors ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# --- Terraform / OpenTofu ---
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+!example.tfvars
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- Kubernetes / Helm ---
+kubeconfig
+kubeconfig-*
+*.kubeconfig
+charts/*.tgz
+charts/**/charts/
+
+# --- Credentials & secrets ---
+*.pem
+*.key
+*.p12
+*.pfx
+*-key.json
+service-account*.json
+.env
+.env.*
+!.env.example
+secrets/
+*.decrypted.*
+
+# --- Ansible ---
+*.retry
+.vault_pass
+
+# --- Local tooling ---
+.direnv/
+.tool-versions.local
