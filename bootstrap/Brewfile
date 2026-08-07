@@ -1,0 +1,73 @@
+
+tap "hashicorp/tap"
+
+# ── Core ─────────────────────────────────────────────────────────
+brew "git"
+brew "gh"                  # GitHub CLI
+brew "pre-commit"
+brew "gitleaks"
+brew "direnv"
+brew "jq"
+brew "yq"
+brew "tree"
+brew "ripgrep"
+brew "bat"
+brew "fzf"
+brew "tmux"
+
+# ── Python (steps 28+, 55+) ──────────────────────────────────────
+brew "uv"                  # environments + dependency resolution
+brew "python@3.12"
+
+# ── Containers (steps 34, 35) ────────────────────────────────────
+brew "colima"              # container runtime on macOS, no Docker Desktop
+brew "docker"
+brew "docker-buildx"       # multi-architecture manifest lists
+brew "podman"              # rootless / daemonless comparison
+brew "dive"                # image layer inspection
+brew "hadolint"            # Dockerfile linter
+
+# ── Kubernetes (steps 36-38, 44) ─────────────────────────────────
+brew "kubernetes-cli"      # provides kubectl
+brew "helm"
+brew "kustomize"
+brew "k9s"
+brew "kubectx"
+brew "stern"               # multi-pod log tailing
+brew "k3d"                 # local cluster, container-based nodes
+
+# ── Cloud (step 2) ───────────────────────────────────────────────
+cask "gcloud-cli"
+
+# ── Infrastructure as code (steps 39, 40) ────────────────────────
+brew "hashicorp/tap/terraform"
+brew "opentofu"            # the comparison is a deliverable, not a fallback
+brew "terraform-docs"
+brew "ansible"
+
+# ── Supply chain & security (step 43) ────────────────────────────
+brew "trivy"               # vulnerability + SBOM scanning
+brew "syft"                # SBOM generation
+brew "cosign"              # image signing
+
+# ── Networking (steps 3-11) ──────────────────────────────────────
+brew "nmap"
+brew "mtr"
+brew "iperf3"
+brew "bind"                # provides dig
+cask "wireshark-app"
+
+# ── PKI / TLS (step 24) ──────────────────────────────────────────
+brew "mkcert"
+brew "step"                # smallstep CLI
+
+# ── Databases (steps 29, 31, 52) ─────────────────────────────────
+brew "libpq"               # psql without the full server
+brew "sqlite"
+
+# ── HTTP / API (step 30) ─────────────────────────────────────────
+brew "httpie"
+brew "curl"
+
+# ── Editor ───────────────────────────────────────────────────────
+cask "visual-studio-code"
