@@ -64,6 +64,7 @@ brew "step"                # smallstep CLI
 # ── Databases (steps 29, 31, 52) ─────────────────────────────────
 brew "libpq"               # psql without the full server
 brew "sqlite"
+brew "dbmate"
 
 # ── HTTP / API (step 30) ─────────────────────────────────────────
 brew "httpie"
